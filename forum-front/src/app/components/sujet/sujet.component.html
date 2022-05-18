@@ -1,0 +1,13 @@
+<div class="sujet">
+  <h3>{{sujet.title}}</h3>
+  <div class="portion">
+    <p>créé le: {{ sujet.createdDate | date: "dd/MM/yyyy" }}</p>
+  </div>
+  <div class="portion">
+    <p>modifié le: {{ sujet.updatedDate | date: "dd/MM/yyyy" }}</p>
+  </div>
+  <div class="portion">
+    <p>{{ sujet.messages.length}} messages dans cette conversation</p>
+  </div>
+  <div class="compteur">{{ sujet.likes }}</div>
+</div>
